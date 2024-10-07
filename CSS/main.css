@@ -52,13 +52,13 @@
         font-size: 32px;
         font-weight: 600;
         font-family: var(--font-logo);
-        color: var(--light);
+        color: var(--primary);
     }
 
     .nav-menu a {
         font-family: var(--font-secondary);
         text-decoration: none;
-        color: var(--light);
+        color: var(--primary);
     }
     
 
@@ -173,7 +173,7 @@
         text-align: center;
     }
 
-    /* STYYLE POPULAT DESTINATION */
+    /* STYYLE POPULAR DESTINATION */
     .popular-destinations {
         text-align: center;
         margin: 50px 0;
@@ -320,17 +320,21 @@
 
     .section-footer {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         margin-top: 100px;
         margin-left: 20px;
         margin-right: 20px;
     }
 
-    .section-footer .sitemap {
+    .section-footer .footer-menu {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
         gap: 20px;
+        padding-bottom: 50px;
+        border-bottom: 3px solid var(--gray);
+
     }
 
     .section-footer .sitemap h3 {
@@ -338,6 +342,7 @@
         text-decoration: none;
         color: var(--primary);
         font-weight: bolder;
+        margin-bottom: 12px;
        
     }   
     .section-footer .sitemap ul {
@@ -346,11 +351,21 @@
         gap: 12px;
     }
 
-    .section-footer .sitemap a, a:hover {
+    .section-footer .sitemap a {
+        padding-bottom: 50px;
         font-size: 18px;
         text-decoration: none;
         color: var(--gray);
         font-weight: normal;
+    } 
+
+    .section-footer .footer-copyright {
+        font-size: 18px;
+        color: var(--gray);
+        font-family: var(--font-secondary);
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     
