@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>PetaPetu</title>
+    <title>Petapetu.io</title>
 
     <!-- style sheet -->
     <link rel="stylesheet" href="CSS/reset.css">
@@ -17,67 +17,208 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container-hero">
-        <header>
-            <div class="logo">
-                <h1>Petapetu</h1>
+    <nav class="navbar">
+        <div class="logo">
+            Petapetu
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Paket Travel</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Testimonial</a></li>
+        </ul>
+        <button class="sign-up">Sign Up</button>
+    </nav>
+
+    <header class="header">
+        <div class="header-content">
+            <h1>
+                Explore the Beautiful World.<br>
+                As Easy One Click
+            </h1>
+          <p>You will see beautiful moment you never see before.</p>
+          <button class="btn-cta">Get Started</button>
+        </div>
+    </header>
+    
+    <section class="informations">
+        <div class="info-box">
+          <div class="info">
+            <span class="number">72K</span>
+            <span class="label">Members</span>
+          </div>
+          <div class="info">
+            <span class="number">20</span>
+            <span class="label">Countries</span>
+          </div>
+          <div class="info">
+            <span class="number">1K</span>
+            <span class="label">Hotels</span>
+          </div>
+          <div class="info">
+            <span class="number">4</span>
+            <span class="label">Partners</span>
+          </div>
+        </div>
+    </section>
+
+    <section class="section-popular-destinations">
+        <h2>Popular Destination</h2>
+        <p>
+            Something that you never try <br>
+            before in this world
+        </p>
+    </section>
+
+    <section class="popular-destinations">
+        <div class="popular-travel">
+            <div class="destination-card" style="background-image: url(./images/bali.png);">
+                <div class="travel-country">INDONESIA</div>
+                <div class="travel-location">Bali</div>
+                <div class="travel-button">
+                    <a href="" class="btn">View Details</a>
+                </div>
             </div>
-            <nav class="nav-link">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Paket Travel</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Testimonial</a></li>
-                </ul>
-            </nav>
-            <div class="contact">
-                <a href="">Sing Up</a>
+            <div class="destination-card" style="background-image: url(./images/bali.png);">
+                <div class="travel-country">INDONESIA</div>
+                <div class="travel-location">Bali</div>
+                <div class="travel-button">
+                    <a href="" class="btn">View Details</a>
+                </div>
             </div>
-        </header>
-        
-        <!-- CTA header -->
-        <div class="content-hero">
-            <div class="headline">
-                <h2>
-                    Explore The Beautiful Word,<br>
-                    As Easy one Click
-                </h2>
+            <div class="destination-card" style="background-image: url(./images/bali.png);">
+                <div class="travel-country">INDONESIA</div>
+                <div class="travel-location">Bali</div>
+                <div class="travel-button">
+                    <a href="" class="btn">View Details</a>
+                </div>
             </div>
-            
-            <div class="subheadline">
-                <p>
-                    You will see Beautiful <br>
-                    Moment you never see before
-                </p>
+            <div class="destination-card" style="background-image: url(./images/bali.png);">
+                <div class="travel-country">INDONESIA</div>
+                <div class="travel-location">Bali</div>
+                <div class="travel-button">
+                    <a href="" class="btn">View Details</a>
+                </div>
             </div>
-            
-            <div class="cta-button">
-                <a href="#">GET STRATED</a>
+        </dic>
+    </section>
+      
+    
+    <section class="testimonials">
+        <div class="ilustration-testimoni">
+            <img src="./images/testimonial-banner.png" alt="">
+        </div>
+        <div class="testimonial">
+            <div class="headline-testimonial">
+                <p>What They Say</p>
+                <h2>What Our Customer <br>
+                    Say About Us</h2>
+            </div>
+            <div class="comment-users">
+                <p>"Lorem ipsum amet consectetur adipisicing elit Blanditiis cupiditate repellat commodi indonesian ,<br> illo expedita eum corrupti doloremque laudantium Lorem Ipsum is simply dummy text of the printing!"</p>
+            </div>
+                <div class="description-users">
+                    <img src="./images/user.svg" alt="">
+                    <div class="data-user">
+                        <p>Theresa Mazzie • Backpackers</p>
+                    <div class="rating">
+                        <img src="./images/icon-star.svg" alt="">
+                        <img src="./images/icon-star.svg" alt="">
+                        <img src="./images/icon-star.svg" alt="">
+                        <img src="./images/icon-star.svg" alt="">
+                        <img src="./images/icon-star.svg" alt="">
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <!-- content informations -->
-        <div class="content-information">
-            <div class="item-information">
-                <div class="item">
-                    <p class="header-text">Hotels</p>
-                    <p class="sub-text">1K</p>
-                </div>
-                <div class="item">
-                    <p class="header-text">Members</p>
-                    <p class="sub-text">72K</p>
-                </div>
-                <div class="item">
-                    <p class="header-text">Countries</p>
-                    <p class="sub-text">20</p>
-                </div>
-                <div class="item">
-                    <p class="header-text">Patners</p>
-                    <p class="sub-text">4</p>
-                </div>
-            </div>
-          </div>
+    <footer class="section-footer">   
+        <div class="sitemap">
+            <h3>Products</h3>
+            <ul>
+                <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-violet-700">Powerful Reports</a>
+                </li>
+                <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-violet-700">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-violet-700">Auto-Backup</a>
+                </li>
+                <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-violet-700"> Data Science</a>
+                </li>
+                <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-violet-700">Auto-Scaling Up</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sitemap">
+            <h3>Products</h3>
+            <ul>
+                <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-violet-700">Powerful Reports</a>
+                </li>
+                <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-violet-700">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-violet-700">Auto-Backup</a>
+                </li>
+                <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-violet-700"> Data Science</a>
+                </li>
+                <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-violet-700">Auto-Scaling Up</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sitemap">
+            <h3>Products</h3>
+            <ul>
+                <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-violet-700">Powerful Reports</a>
+                </li>
+                <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-violet-700">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-violet-700">Auto-Backup</a>
+                </li>
+                <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-violet-700"> Data Science</a>
+                </li>
+                <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-violet-700">Auto-Scaling Up</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sitemap">
+            <h3>Products</h3>
+            <ul>
+                <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-violet-700">Powerful Reports</a>
+                </li>
+                <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-violet-700">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-violet-700">Auto-Backup</a>
+                </li>
+                <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-violet-700"> Data Science</a>
+                </li>
+                <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-violet-700">Auto-Scaling Up</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    </div>
+    <!-- <div class="max-w-6xl mx-auto text-center py-10">
+        <p class="text base text-gray-500">All Rights Reserved • Copyright Weserve by BuildWithAngga 2024 in Bandung</p>
+    </div>     -->
+    </footer>
 </body>
 </html>
