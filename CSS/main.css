@@ -1,0 +1,371 @@
+    *{
+        box-sizing: border-box;
+    }
+
+    :root {
+        --primary: #071C4D;
+        --secondary: #FF9A4D;
+        --gray: #848484;
+        --danger: #dc3545;
+        --light: #ffffff;
+        --dark: #00000;
+    }
+
+    :root {
+        --font-primary: 'Playfair Display', sans-serif;
+        --font-secondary: 'Assistant', sans-serif;
+        --font-logo: 'Nunito', sans-serif;
+    }
+
+    body {
+        height: auto;
+    }
+
+    .container {
+        max-width: 1728px; /* Sesuaikan dengan lebar maksimum desain Anda */
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 24px; /* Gutter */
+    }
+
+    /* STYLE NAVBAR */
+    .navbar {
+        background-color: rgba(255, 255, 255, 0); /* Latar belakang transparan */
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .nav-menu {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    
+    .logo {
+        font-size: 32px;
+        font-weight: 600;
+        font-family: var(--font-logo);
+        color: var(--primary);
+    }
+
+    .nav-menu a {
+        font-family: var(--font-secondary);
+        text-decoration: none;
+        color: var(--primary);
+    }
+    
+
+    .nav-menu a:hover {
+        color: var(--secondary);
+        border-bottom: 2px solid orange;
+    }
+    
+    .sign-up {
+        background-color: var(--primary);
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* STYLE HEADER  */
+    .header {
+        background-image: url(../images/header-banner.png); /* Ganti 'your-image.jpg' dengan nama file gambar Anda */
+        background-size: cover;
+        background-position: center;
+        height: 550px; /* Sesuaikan tinggi header sesuai kebutuhan */
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .header-content {
+        text-align: center;
+        color: #fff;
+    }
+    
+    h1 {
+        font-family: var(--font-primary);
+        font-size: 40px;
+        font-weight: lighter;
+    }
+
+    p {
+        margin-top: 20px;
+        font-family: var(--font-secondary);
+        font-size: 18px;
+    }
+    
+    .btn-cta {
+        background-color: var(--secondary);
+        color: #fff;
+        padding: 15px 30px;
+        margin-top: 40px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* STYLE SECTION INFORMATIONS */
+    .informations {
+        position: relative;
+        top: -3rem;
+        width: 800px;
+        margin: 0 auto;
+        background-color: rgb(2555, 255, 255, 10); /* Latar belakang putih transparan */
+        padding: 20px 50px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .info-box {
+        display: flex;
+        justify-content: space-around;
+        gap: 100px;
+    }
+    
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .number {
+        font-family: var(--font-secondary);
+        font-size: 32px;
+        font-weight: bold;
+        color: var(--primary);
+    }
+    
+    .label {
+        font-family: var(--font-secondary);
+        font-size: 24px;
+        font-weight: lighter;
+        color: var(--primary);
+    }
+    
+    /* STYLE HEADING DAN SUBHEADING POPULAR DESTINATION */
+    .section-popular-destinations h2{
+        margin-top: 75px;
+        font-family: var(--font-primary);
+        font-size: 40px;
+        color: var(--primary);
+        font-weight: lighter;   
+        text-align: center;
+    }
+
+    .section-popular-destinations p{
+        font-family: var(--font-secondary);
+        font-size: 16px;
+        color: var(--gray);
+        font-weight: lighter;   
+        text-align: center;
+    }
+
+    /* STYYLE POPULAR DESTINATION */
+    .popular-destinations {
+        text-align: center;
+        margin: 50px 0;
+    }
+
+    .popular-destinations .popular-travel {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr); /* 12 kolom dengan lebar yang sama */
+        gap: 24px; /* Jarak antar kolom */
+        margin: 0 20px; /* Margin kiri dan kanan */
+    }
+
+    .popular-destinations h2{
+        font-family: var(--font-primary);
+        font-size: 40px;
+        color: var(--primary);
+        font-weight: lighter;
+    }
+
+    .popular-destinations p{
+        font-family: var(--font-secondary);
+        font-size: 18px;
+        color: var(--gray);
+        font-weight: lighter;
+        margin-top: 20px;
+    }
+
+    .popular-destinations .destination-card {
+        grid-column: span 3; /* Setiap kartu menempati 3 kolom */
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        min-height: 380px;
+        border-radius: 16px;
+        padding: 30px;
+        margin-bottom: 30px;
+        background-size: cover;
+    }  
+    
+    .popular-destinations .travel-country {
+        font-family: var(--font-secondary);
+        font-size: 18px;
+        color: var(--light);
+    }
+
+    .popular-destinations .travel-location {
+        padding-top: 20px;
+        font-family: var(--font-secondary);
+        font-size: 26px;
+        font-weight: 500;
+        color: var(--light);
+    }
+    
+    .travel-button {
+        margin: 0 auto;
+        margin-top: 300px;
+        align-self: flex-end; /* Positions the button at the bottom */
+    }
+
+    .travel-button .btn{
+        background-color: var(--secondary);
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* STYLE OUR testimonial */
+    .testimonials {
+        display: flex;
+        gap: 20px; /* Atur jarak antar baris menjadi 20 piksel */
+        justify-content: center;
+        text-align: center;
+        padding: 50px;
+      }
+
+    .ilustration-testimoni img {
+    max-height: 400px;
+    }
+    
+    .testimonial {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        border-radius: 10px;
+        margin: 20px;
+    }
+
+    .headline-testimonial {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .headline-testimonial p {
+        text-align: left;
+        font-family: var(--font-secondary);
+        font-size: 18px;
+        color: var(--gray);
+        font-weight: lighter;
+    }
+
+    .headline-testimonial h2 {
+        text-align: left;
+        font-family: var(--font-primary);
+        font-size: 40px;
+        color: var(--primary);
+        font-weight: lighter;
+    }
+
+    .comment-users p {
+        max-width: 350px;
+        text-align: left;
+        font-family: var(--font-secondary);
+        font-size: 16px;
+        color: var(--gray);
+        margin-bottom: 20px;
+    } 
+    
+    .description-users{
+        display: flex;
+        flex: column;
+        gap: 20px;
+        justify-content: start;
+       
+    }
+
+    .description-users .data-user {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        color:#FF9A4D;
+        gap: 20px;
+        align-items: left;
+    }
+
+    .description-users .data-user p{
+        font-size: 18px;
+        color: var(--primary);
+        font-weight: 500;
+        font-family: var(--font-secondary);
+    }
+
+    .section-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 100px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .section-footer .footer-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+        padding-bottom: 50px;
+        border-bottom: 3px solid var(--gray);
+
+    }
+
+    .section-footer .sitemap h3 {
+        font-size: 18px;
+        text-decoration: none;
+        color: var(--primary);
+        font-weight: bolder;
+        margin-bottom: 12px;
+       
+    }   
+    .section-footer .sitemap ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .section-footer .sitemap a {
+        padding-bottom: 50px;
+        font-size: 18px;
+        text-decoration: none;
+        color: var(--gray);
+        font-weight: normal;
+    } 
+
+    .section-footer .footer-copyright {
+        font-size: 18px;
+        color: var(--gray);
+        font-family: var(--font-secondary);
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    
